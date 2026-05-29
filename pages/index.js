@@ -97,7 +97,7 @@ export default function Home() {
         </a>
       </section>
 
-      id="Services"
+      {/* Services */}
       <section
         style={{
           padding: "60px 20px",
