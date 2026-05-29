@@ -19,18 +19,22 @@ export default function Home() {
         <p style={{ color: "#bbb", maxWidth: "600px", margin: "20px auto" }}>
           Inversión inmobiliaria estratégica con visión moderna y enfoque en crecimiento patrimonial.
         </p>
-
-        <button style={{
+      <a href="mailto:info@reymarques.com">
+        <button 
+         style={{
           marginTop: "20px",
-          padding: "12px 24px",
-          borderRadius: "12px",
-          border: "1px solid white",
-          background: "transparent",
+          padding: "15px 30px",
+          background:"transparente",
           color: "white",
+          border: "1px solid white",
+          borderRadius: "12px",
           cursor: "pointer"
-        }}>
+           fontSize:"16px"
+        }}
+         >
           Agenda una consulta
         </button>
+        </a>  
       </section>
 
       {/* About */}
