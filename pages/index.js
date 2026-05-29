@@ -5,46 +5,6 @@ export default function Home() {
     <div
       style={{
         background: "#0b0b0b",
-        <nav
-  style={{
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "20px 40px",
-    borderBottom: "1px solid #222",
-    position: "sticky",
-    top: 0,
-    background: "#0b0b0b",
-    zIndex: 1000
-  }}
->
-  <h2 style={{ fontSize: "20px" }}>
-    Rey Marques
-  </h2>
-
-  <div
-    style={{
-      display: "flex",
-      gap: "20px"
-    }}
-  >
-    <a href="#" style={{ color: "white", textDecoration: "none" }}>
-      Home
-    </a>
-
-    <a href="#services" style={{ color: "white", textDecoration: "none" }}>
-      Services
-    </a>
-
-    <a href="#about" style={{ color: "white", textDecoration: "none" }}>
-      About
-    </a>
-
-    <a href="#contact" style={{ color: "white", textDecoration: "none" }}>
-      Contact
-    </a>
-  </div>
-</nav>
         color: "white",
         minHeight: "100vh",
         fontFamily: "Arial"
