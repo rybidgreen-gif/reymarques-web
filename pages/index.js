@@ -10,46 +10,56 @@ export default function Home() {
         fontFamily: "Arial"
       }}
     >
-<nav
-  style={{
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "20px 40px",
-    borderBottom: "1px solid #222",
-    position: "sticky",
-    top: 0,
-    background: "#0b0b0b",
-    zIndex: 1000
-  }}
->
-  <h2 style={{ fontSize: "20px" }}>
-    Rey Marques Investor LLc
-  </h2>
+      <nav
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "20px 40px",
+          borderBottom: "1px solid #222",
+          position: "sticky",
+          top: 0,
+          background: "#0b0b0b",
+          zIndex: 1000
+        }}
+      >
+        <h2 style={{ fontSize: "20px" }}>
+          Rey Marques Investor LLC
+        </h2>
 
-  <div
-    style={{
-      display: "flex",
-      gap: "20px"
-    }}
-  >
-    <a href="#" style={{ color: "white", textDecoration: "none" }}>
-      Home
-    </a>
+        <div
+          style={{
+            display: "flex",
+            gap: "20px"
+          }}
+        >
+          <a href="#" style={{ color: "white", textDecoration: "none" }}>
+            Home
+          </a>
 
-    <a href="#services" style={{ color: "white", textDecoration: "none" }}>
-      Services
-    </a>
+          <a
+            href="#services"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Services
+          </a>
 
-    <a href="#about" style={{ color: "white", textDecoration: "none" }}>
-      About
-    </a>
+          <a
+            href="#about"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            About
+          </a>
 
-    <a href="#contact" style={{ color: "white", textDecoration: "none" }}>
-      Contact
-    </a>
-  </div>
-</nav>
+          <a
+            href="#contact"
+            style={{ color: "white", textDecoration: "none" }}
+          >
+            Contact
+          </a>
+        </div>
+      </nav>
+
       {/* Hero */}
       <section
         style={{
@@ -66,17 +76,22 @@ export default function Home() {
             fontWeight: "bold"
           }}
         >
-            Construyendo Valor con Integridad, Servicio y Proposito.
+          Construyendo Valor con Integridad, Servicio y Propósito
         </motion.h1>
 
         <p
           style={{
             color: "#bbb",
-            maxWidth: "600px",
-            margin: "20px auto"
+            maxWidth: "700px",
+            margin: "20px auto",
+            lineHeight: "1.8"
           }}
         >
-          Rey Marques Investor LLc esta alineada con el desarrollo humano, el servicio y la ayuda social. Construimos un futuro sostenible a traves de oportunidades inmobiliarias inteligentes,restaurando propiedades y fortaleciendo comunidades para las generaciones presentes y futuras.
+          Rey Marques Investor LLC está alineada con el desarrollo humano,
+          el servicio y la ayuda social. Construimos un futuro sostenible
+          a través de oportunidades inmobiliarias inteligentes,
+          restaurando propiedades y fortaleciendo comunidades para las
+          generaciones presentes y futuras.
         </p>
 
         <a href="mailto:info@reymarques.com">
@@ -99,25 +114,28 @@ export default function Home() {
 
       {/* Services */}
       <section
-        id="Services"
+        id="services"
         style={{
           padding: "60px 20px",
           textAlign: "center"
         }}
       >
         <h2 style={{ fontSize: "32px" }}>
-            Estrategia de Inversion Estructurada
+          Estrategias de Inversión Estructurada
         </h2>
 
-             <p
-  style={{
-    color: "#aaa",
-    maxWidth: "700px",
-    margin: "20px auto"
-  }}
->
-  Un enfoque integral para identificar, adquirir, administrar y transformar oportunidades inmobiliarias de manera responsable y sostenible.
-</p> 
+        <p
+          style={{
+            color: "#aaa",
+            maxWidth: "700px",
+            margin: "20px auto"
+          }}
+        >
+          Un enfoque integral para identificar, adquirir, administrar y
+          transformar oportunidades inmobiliarias de manera responsable y
+          sostenible.
+        </p>
+
         <div
           style={{
             display: "grid",
@@ -133,9 +151,9 @@ export default function Home() {
               borderRadius: "20px"
             }}
           >
-            <h3>Analisis</h3>
+            <h3>Análisis</h3>
             <p style={{ color: "#aaa" }}>
-             Ver mas
+              Ver más
             </p>
           </div>
 
@@ -146,9 +164,9 @@ export default function Home() {
               borderRadius: "20px"
             }}
           >
-            <h3>Adquisicion</h3>
+            <h3>Adquisición</h3>
             <p style={{ color: "#aaa" }}>
-              ver mas
+              Ver más
             </p>
           </div>
 
@@ -159,34 +177,28 @@ export default function Home() {
               borderRadius: "20px"
             }}
           >
-<div
-  style={{
-    background: "#161616",
-    padding: "30px",
-    borderRadius: "20px"
-  }}
->
-  <h3>Administración</h3>
-  <p style={{ color: "#aaa" }}>
-    Ver más
-  </p>
-</div>
+            <h3>Administración</h3>
+            <p style={{ color: "#aaa" }}>
+              Ver más
+            </p>
+          </div>
 
-<div
-  style={{
-    background: "#161616",
-    padding: "30px",
-    borderRadius: "20px"
-  }}
->
-  <h3>Cierre</h3>
-  <p style={{ color: "#aaa" }}>
-    Ver más
-  </p>
-</div>
-
+          <div
+            style={{
+              background: "#161616",
+              padding: "30px",
+              borderRadius: "20px"
+            }}
+          >
+            <h3>Cierre</h3>
+            <p style={{ color: "#aaa" }}>
+              Ver más
+            </p>
+          </div>
+        </div>
       </section>
-       {/* About */}
+
+      {/* About */}
       <section
         id="about"
         style={{
@@ -206,11 +218,28 @@ export default function Home() {
             lineHeight: "1.8"
           }}
         >
-         Rey Marques Investor LLC identifica oportunidades inmobiliarias estratégicas mediante la adquisición y recuperación de propiedades. Nuestro objetivo es restaurar activos, fortalecer comunidades y promover el desarrollo sostenible a través de una administración responsable y una visión de largo plazo.
-Operamos bajo principios de integridad, servicio y responsabilidad, buscando generar valor económico y social para las comunidades donde trabajamos.
+          Rey Marques Investor LLC identifica oportunidades inmobiliarias
+          estratégicas mediante la adquisición y recuperación de propiedades.
+          Nuestro objetivo es restaurar activos, fortalecer comunidades y
+          promover el desarrollo sostenible a través de una administración
+          responsable y una visión de largo plazo.
         </p>
-      </section> 
-         {/* Contact */}
+
+        <p
+          style={{
+            maxWidth: "800px",
+            margin: "20px auto",
+            color: "#aaa",
+            lineHeight: "1.8"
+          }}
+        >
+          Operamos bajo principios de integridad, servicio y responsabilidad,
+          buscando generar valor económico y social para las comunidades donde
+          trabajamos.
+        </p>
+      </section>
+
+      {/* Contact */}
       <section
         id="contact"
         style={{
@@ -236,7 +265,7 @@ Operamos bajo principios de integridad, servicio y responsabilidad, buscando gen
         >
           info@reymarques.com
         </a>
-      </section>   
+      </section>
     </div>
   );
 }
