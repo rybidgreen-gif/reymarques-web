@@ -183,7 +183,7 @@ export default function Home() {
     Ver más
   </p>
 </div>
-    
+      </div>
         </div>
       </section>
        {/* About */}
