@@ -99,6 +99,7 @@ export default function Home() {
 
       {/* Services */}
       <section
+        id="Services"
         style={{
           padding: "60px 20px",
           textAlign: "center"
@@ -156,6 +157,59 @@ export default function Home() {
           </div>
         </div>
       </section>
+       {/* About */}
+      <section
+        id="about"
+        style={{
+          padding: "60px 20px",
+          textAlign: "center"
+        }}
+      >
+        <h2 style={{ fontSize: "32px" }}>
+          Sobre Nosotros
+        </h2>
+
+        <p
+          style={{
+            maxWidth: "800px",
+            margin: "20px auto",
+            color: "#aaa",
+            lineHeight: "1.8"
+          }}
+        >
+          Rey Marques Investor LLC está enfocada en identificar oportunidades
+          inmobiliarias estratégicas, adquisición de propiedades mediante
+          subastas, tax deeds y construcción de crédito empresarial para generar
+          crecimiento patrimonial sostenible.
+        </p>
+      </section> 
+         {/* Contact */}
+      <section
+        id="contact"
+        style={{
+          padding: "60px 20px",
+          textAlign: "center"
+        }}
+      >
+        <h2 style={{ fontSize: "32px" }}>
+          Contacto
+        </h2>
+
+        <p style={{ color: "#aaa" }}>
+          ¿Interesado en trabajar con nosotros?
+        </p>
+
+        <a
+          href="mailto:info@reymarques.com"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            fontSize: "20px"
+          }}
+        >
+          info@reymarques.com
+        </a>
+      </section>   
     </div>
   );
 }
