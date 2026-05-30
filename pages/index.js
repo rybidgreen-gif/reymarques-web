@@ -159,17 +159,19 @@ export default function Home() {
               borderRadius: "20px"
             }}
           >
-            <h3>Administracion</h3>
-            <p style={{ color: "#aaa" }}>
-              ver mas
-            </p>
-            <div
+<div
   style={{
     background: "#161616",
     padding: "30px",
     borderRadius: "20px"
   }}
 >
+  <h3>Administración</h3>
+  <p style={{ color: "#aaa" }}>
+    Ver más
+  </p>
+</div>
+
 <div
   style={{
     background: "#161616",
@@ -178,13 +180,11 @@ export default function Home() {
   }}
 >
   <h3>Cierre</h3>
-
   <p style={{ color: "#aaa" }}>
     Ver más
   </p>
 </div>
-      </div>
-        </div>
+
       </section>
        {/* About */}
       <section
