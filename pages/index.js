@@ -24,7 +24,7 @@ export default function Home() {
   }}
 >
   <h2 style={{ fontSize: "20px" }}>
-    Rey Marques
+    Rey Marques Investor LLc
   </h2>
 
   <div
@@ -66,7 +66,6 @@ export default function Home() {
             fontWeight: "bold"
           }}
         >
-          Rey Marques Investor LLC
             Construyendo Valor con Integridad, Servicio y Proposito.
         </motion.h1>
 
@@ -77,7 +76,7 @@ export default function Home() {
             margin: "20px auto"
           }}
         >
-          Rey Marques Investor LLc esta alineada con el desarrollo humano, el servivio y la ayuda social. Construimos un futuro sostenible a traves de oportunidades inmobiliarias inteligentes,restaurando propiedades y fortaleciendo comunidades para las generaciones presentes y futuras.
+          Rey Marques Investor LLc esta alineada con el desarrollo humano, el servicio y la ayuda social. Construimos un futuro sostenible a traves de oportunidades inmobiliarias inteligentes,restaurando propiedades y fortaleciendo comunidades para las generaciones presentes y futuras.
         </p>
 
         <a href="mailto:info@reymarques.com">
