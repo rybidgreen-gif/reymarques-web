@@ -106,7 +106,6 @@ export default function Home() {
         }}
       >
         <h2 style={{ fontSize: "32px" }}>
-          Servicios
             Estrategia de Inversion Estructurada
         </h2>
 
