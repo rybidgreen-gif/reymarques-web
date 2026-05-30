@@ -24,7 +24,7 @@ export default function Home() {
   }}
 >
   <h2 style={{ fontSize: "20px" }}>
-    Rey Marques Investor LLc
+    Rey Marques Investor LLc.
   </h2>
 
   <div
@@ -109,6 +109,15 @@ export default function Home() {
             Estrategia de Inversion Estructurada
         </h2>
 
+             <p
+  style={{
+    color: "#aaa",
+    maxWidth: "700px",
+    margin: "20px auto"
+  }}
+>
+  Un enfoque integral para identificar, adquirir, administrar y transformar oportunidades inmobiliarias de manera responsable y sostenible.
+</p> 
         <div
           style={{
             display: "grid",
@@ -161,12 +170,20 @@ export default function Home() {
     borderRadius: "20px"
   }}
 >
+<div
+  style={{
+    background: "#161616",
+    padding: "30px",
+    borderRadius: "20px"
+  }}
+>
   <h3>Cierre</h3>
 
   <p style={{ color: "#aaa" }}>
     Ver más
   </p>
-</div>    
+</div>
+    
           </div>
         </div>
       </section>
