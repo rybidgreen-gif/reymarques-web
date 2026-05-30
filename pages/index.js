@@ -24,7 +24,7 @@ export default function Home() {
   }}
 >
   <h2 style={{ fontSize: "20px" }}>
-    Rey Marques Investor LLc.
+    Rey Marques Investor LLc
   </h2>
 
   <div
