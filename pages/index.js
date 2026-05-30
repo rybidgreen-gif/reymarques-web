@@ -67,6 +67,7 @@ export default function Home() {
           }}
         >
           Rey Marques Investor LLC
+            Construyendo Valor con Integridad, Servicio y Proposito.
         </motion.h1>
 
         <p
@@ -76,7 +77,7 @@ export default function Home() {
             margin: "20px auto"
           }}
         >
-          Inversión inmobiliaria estratégica con visión moderna y enfoque en crecimiento patrimonial.
+          Rey Marques Investor LLc esta alineada con el desarrollo humano, el servivio y la ayuda social. Construimos un futuro sostenible a traves de oportunidades inmobiliarias inteligentes,restaurando propiedades y fortaleciendo comunidades para las generaciones presentes y futuras.
         </p>
 
         <a href="mailto:info@reymarques.com">
@@ -107,6 +108,7 @@ export default function Home() {
       >
         <h2 style={{ fontSize: "32px" }}>
           Servicios
+            Estrategia de Inversion Estructurada
         </h2>
 
         <div
@@ -124,9 +126,9 @@ export default function Home() {
               borderRadius: "20px"
             }}
           >
-            <h3>Inversión en Subastas</h3>
+            <h3>Analisis</h3>
             <p style={{ color: "#aaa" }}>
-              Estrategias enfocadas en oportunidades inmobiliarias inteligentes.
+             Ver mas
             </p>
           </div>
 
@@ -137,9 +139,9 @@ export default function Home() {
               borderRadius: "20px"
             }}
           >
-            <h3>Crédito Empresarial</h3>
+            <h3>Adquisicion</h3>
             <p style={{ color: "#aaa" }}>
-              Construcción de capital y financiamiento empresarial.
+              ver mas
             </p>
           </div>
 
@@ -150,10 +152,23 @@ export default function Home() {
               borderRadius: "20px"
             }}
           >
-            <h3>Análisis de Propiedades</h3>
+            <h3>Administracion</h3>
             <p style={{ color: "#aaa" }}>
-              Evaluación estratégica para adquisiciones rentables.
+              ver mas
             </p>
+            <div
+  style={{
+    background: "#161616",
+    padding: "30px",
+    borderRadius: "20px"
+  }}
+>
+  <h3>Cierre</h3>
+
+  <p style={{ color: "#aaa" }}>
+    Ver más
+  </p>
+</div>    
           </div>
         </div>
       </section>
@@ -177,10 +192,8 @@ export default function Home() {
             lineHeight: "1.8"
           }}
         >
-          Rey Marques Investor LLC está enfocada en identificar oportunidades
-          inmobiliarias estratégicas, adquisición de propiedades mediante
-          subastas, tax deeds y construcción de crédito empresarial para generar
-          crecimiento patrimonial sostenible.
+         Rey Marques Investor LLC identifica oportunidades inmobiliarias estratégicas mediante la adquisición y recuperación de propiedades. Nuestro objetivo es restaurar activos, fortalecer comunidades y promover el desarrollo sostenible a través de una administración responsable y una visión de largo plazo.
+Operamos bajo principios de integridad, servicio y responsabilidad, buscando generar valor económico y social para las comunidades donde trabajamos.
         </p>
       </section> 
          {/* Contact */}
