@@ -147,6 +147,7 @@ export default function Home() {
           <div
             style={{
               background: "#2E3A2A",
+              border: "1px solid #D4AF37",
               padding: "30px",
               borderRadius: "20px"
             }}
@@ -160,6 +161,7 @@ export default function Home() {
           <div
             style={{
               background: "#2E3A2A",
+              border: "1px solid #D4AF37",
               padding: "30px",
               borderRadius: "20px"
             }}
@@ -173,6 +175,7 @@ export default function Home() {
           <div
             style={{
               background: "#2E3A2A",
+              border: "1px solid #D4AF37",
               padding: "30px",
               borderRadius: "20px"
             }}
@@ -186,6 +189,7 @@ export default function Home() {
           <div
             style={{
               background: "#2E3A2A",
+              border: "1px solid #D4AF37",
               padding: "30px",
               borderRadius: "20px"
             }}
