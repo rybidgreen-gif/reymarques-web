@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div
       style={{
-        background: "#0b0b0b",
-        color: "white",
+        background: "#1F2A1D",
+        color: "#F5F5F0",
         minHeight: "100vh",
         fontFamily: "Arial"
       }}
@@ -19,7 +19,7 @@ export default function Home() {
           borderBottom: "1px solid #222",
           position: "sticky",
           top: 0,
-          background: "#0b0b0b",
+          background: "#1E3A5F",
           zIndex: 1000
         }}
       >
