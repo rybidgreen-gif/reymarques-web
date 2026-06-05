@@ -146,7 +146,7 @@ export default function Home() {
         >
           <div
             style={{
-              background: "#161616",
+              background: "#2E3A2A",
               padding: "30px",
               borderRadius: "20px"
             }}
@@ -159,7 +159,7 @@ export default function Home() {
 
           <div
             style={{
-              background: "#161616",
+              background: "#2E3A2A",
               padding: "30px",
               borderRadius: "20px"
             }}
@@ -172,7 +172,7 @@ export default function Home() {
 
           <div
             style={{
-              background: "#161616",
+              background: "#2E3A2A",
               padding: "30px",
               borderRadius: "20px"
             }}
@@ -185,7 +185,7 @@ export default function Home() {
 
           <div
             style={{
-              background: "#161616",
+              background: "#2E3A2A",
               padding: "30px",
               borderRadius: "20px"
             }}
