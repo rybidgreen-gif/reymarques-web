@@ -99,12 +99,14 @@ export default function Home() {
             style={{
               marginTop: "20px",
               padding: "15px 30px",
-              background: "transparent",
-              color: "white",
-              border: "1px solid white",
+              background: "#D4AF37",
+              color: "#1F2A1D",
+              border: "none",
               borderRadius: "12px",
               cursor: "pointer",
-              fontSize: "16px"
+              fontSize: "16px",
+              fontWeight:"bold",
+              transition:"0.3s"
             }}
           >
             Agenda una Consulta
