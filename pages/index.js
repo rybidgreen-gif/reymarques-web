@@ -34,28 +34,28 @@ export default function Home() {
           }}
         >
           <a href="#" style={{ color: "white", textDecoration: "none" }}>
-            Home
+            HOME
           </a>
 
           <a
             href="#services"
             style={{ color: "white", textDecoration: "none" }}
           >
-            Services
+            SERVICES
           </a>
 
           <a
             href="#about"
             style={{ color: "white", textDecoration: "none" }}
           >
-            About
+            ABOUT
           </a>
 
           <a
             href="#contact"
             style={{ color: "white", textDecoration: "none" }}
           >
-            Contact
+            CONTACT
           </a>
         </div>
       </nav>
@@ -76,7 +76,7 @@ export default function Home() {
             fontWeight: "bold"
           }}
         >
-          Construyendo Valor con Integridad, Servicio y Propósito
+          Building Value Through Integrity, Service and Purpose
         </motion.h1>
 
         <p
@@ -87,11 +87,9 @@ export default function Home() {
             lineHeight: "1.8"
           }}
         >
-          Rey Marques Investor LLC está alineada con el desarrollo humano,
-          el servicio y la ayuda social. Construimos un futuro sostenible
-          a través de oportunidades inmobiliarias inteligentes,
-          restaurando propiedades y fortaleciendo comunidades para las
-          generaciones presentes y futuras.
+         Rey Marques Investor LLC is aligned with human development, service and social impact. 
+         We build a sustainable future through strategic real estate opportunities, 
+         restoring properties and strengthening communities for present and future generations.
         </p>
 
         <a href="mailto:info@reymarques.com">
@@ -109,7 +107,7 @@ export default function Home() {
               transition:"0.3s"
             }}
           >
-            Agenda una Consulta
+            Schedule a Consultation
           </button>
         </a>
       </section>
@@ -254,11 +252,11 @@ export default function Home() {
         }}
       >
         <h2 style={{ fontSize: "32px" }}>
-          Contacto
+          Contact
         </h2>
 
         <p style={{ color: "#aaa" }}>
-          ¿Interesado en trabajar con nosotros?
+          ¿Interested in working with us?
         </p>
 
         <a
@@ -271,6 +269,16 @@ export default function Home() {
         >
           info@reymarques.com
         </a>
+        <a
+  href="#"
+  style={{
+    color: "#D4AF37",
+    textDecoration: "none",
+    fontWeight: "bold"
+  }}
+>
+  ESPAÑOL
+</a>    
       </section>
     </div>
   );
