@@ -267,8 +267,10 @@ export default function Home() {
             fontSize: "20px"
           }}
         >
-          info@reymarques.com
+          info@reymarques.com   
         </a>
+        </p>  
+            
         <a
   href="#"
   style={{
