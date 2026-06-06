@@ -269,8 +269,9 @@ export default function Home() {
         >
           info@reymarques.com   
         </a>
-        </p>  
-            
+        
+            <p
+                
         <a
   href="#"
   style={{
@@ -280,7 +281,9 @@ export default function Home() {
   }}
 >
   ESPAÑOL
-</a>    
+     
+</a> 
+    </p>
       </section>
     </div>
   );
