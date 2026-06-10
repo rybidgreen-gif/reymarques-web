@@ -1,290 +1,320 @@
+    import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  return (
-    <div
-      style={{
-        background: "#1F2A1D",
-        color: "#F5F5F0",
-        minHeight: "100vh",
-        fontFamily: "Arial"
-      }}
-    >
-      <nav
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "20px 40px",
-          borderBottom: "1px solid #222",
-          position: "sticky",
-          top: 0,
-          background: "#1E3A5F",
-          zIndex: 1000
-        }}
-      >
-        <h2 style={{ fontSize: "20px" }}>
-          Rey Marques Investor LLC
-        </h2>
+const [openSection, setOpenSection] = useState(null);
+const [openService, setOpenService] = useState(null);
 
-        <div
-          style={{
-            display: "flex",
-            gap: "20px"
-          }}
-        >
-          <a href="#" style={{ color: "white", textDecoration: "none" }}>
-            HOME
-          </a>
+const toggleSection = (section) => {
+setOpenSection(openSection === section ? null : section);
+setOpenService(null);
+};
 
-          <a
-            href="#services"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            SERVICES
-          </a>
+const toggleService = (service) => {
+setOpenService(openService === service ? null : service);
+};
 
-          <a
-            href="#about"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            ABOUT
-          </a>
+return (
+<div
+style={{
+background: "#556B4D",
+color: "#F5F5F0",
+minHeight: "100vh",
+fontFamily: "Georgia, serif"
+}}
+> 
+{/*NAVBAR */}
+<nav
+style={{
+display: "flex",
+justifyContent: "space-between",
+alignItems: "center",
+padding: "20px 40px",
+borderBottom: "1px solid rgba(255,255,255,0.15)",
+position: "sticky",
+top: 0,
+background: "#556B4D",
+zIndex: 1000
+}}
+> 
+<h2style={{ margin: 0 }}>
+Rey Marques Investor LLC
+</h2>
 
-          <a
-            href="#contact"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            CONTACT
-          </a>
-        </div>
-      </nav>
+<div
+style={{
+display: "flex",
+gap: "30px"
+}}
+> 
+<buttonstyle={menuButton} onClick={() => toggleSection("home")}>
+HOME
+</button>
 
-      {/* Hero */}
-      <section
-        style={{
-          textAlign: "center",
-          padding: "100px 20px"
-        }}
-      >
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          style={{
-            fontSize: "48px",
-            fontWeight: "bold"
-          }}
-        >
-          Building Value Through Integrity, Service and Purpose
-        </motion.h1>
+<button style={menuButton} onClick={() => toggleSection("services")}>
+SERVICES
+</button>
 
-        <p
-          style={{
-            color: "#bbb",
-            maxWidth: "700px",
-            margin: "20px auto",
-            lineHeight: "1.8"
-          }}
-        >
-         Rey Marques Investor LLC is aligned with human development, service and social impact. 
-         We build a sustainable future through strategic real estate opportunities, 
-         restoring properties and strengthening communities for present and future generations.
-        </p>
+<button style={menuButton} onClick={() => toggleSection("about")}>
+ABOUT
+</button>
 
-        <a href="mailto:info@reymarques.com">
-          <button
-            style={{
-              marginTop: "20px",
-              padding: "15px 30px",
-              background: "#D4AF37",
-              color: "#1F2A1D",
-              border: "none",
-              borderRadius: "12px",
-              cursor: "pointer",
-              fontSize: "16px",
-              fontWeight:"bold",
-              transition:"0.3s"
-            }}
-          >
-            Schedule a Consultation
-          </button>
-        </a>
-      </section>
+<button style={menuButton} onClick={() => toggleSection("contact")}>
+CONTACT
+</button>
+</div>
+</nav>
 
-      {/* Services */}
-      <section
-        id="services"
-        style={{
-          padding: "60px 20px",
-          textAlign: "center"
-        }}
-      >
-        <h2 style={{ fontSize: "32px" }}>
-          Estrategias de Inversión Estructurada
-        </h2>
+{/* HERO */}
+<section
+style={{
+textAlign: "center",
+padding: "120px 20px 80px"
+}}
+> 
+<motion.div
+initial={{ opacity: 0 }}
+animate={{ opacity: 1 }}
+transition={{ duration: 1 }}
+> 
+<div
+style={{
+fontSize: "90px",
+lineHeight: "1",
+marginBottom: "20px"
+}}
+> 
+👑
+<br />
+RM
+</div>
 
-        <p
-          style={{
-            color: "#aaa",
-            maxWidth: "700px",
-            margin: "20px auto"
-          }}
-        >
-          Un enfoque integral para identificar, adquirir, administrar y
-          transformar oportunidades inmobiliarias de manera responsable y
-          sostenible.
-        </p>
+<h1
+style={{
+fontSize: "42px",
+maxWidth: "900px",
+margin: "0 auto"
+}}
+> 
+BuildingValue Through Integrity,
+<br />
+Service and Purpose.
+</h1>
+</motion.div>
+</section>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
-            gap: "20px",
-            marginTop: "40px"
-          }}
-        >
-          <div
-            style={{
-              background: "#2E3A2A",
-              border: "1px solid #D4AF37",
-              padding: "30px",
-              borderRadius: "20px"
-            }}
-          >
-            <h3>Análisis</h3>
-            <p style={{ color: "#aaa" }}>
-              Ver más
-            </p>
-          </div>
+{/* HOME */}
+{openSection === "home" && (
+<SectionCard title="HOME">
+<p>
+Rey Marques Investor LLC is aligned with human development,
+service and social impact.
+</p>
 
-          <div
-            style={{
-              background: "#2E3A2A",
-              border: "1px solid #D4AF37",
-              padding: "30px",
-              borderRadius: "20px"
-            }}
-          >
-            <h3>Adquisición</h3>
-            <p style={{ color: "#aaa" }}>
-              Ver más
-            </p>
-          </div>
+<p>
+We build a sustainable future through strategic real estate
+opportunities, restoring properties and strengthening
+communities for present and future generations.
+</p>
+</SectionCard>
+)}
 
-          <div
-            style={{
-              background: "#2E3A2A",
-              border: "1px solid #D4AF37",
-              padding: "30px",
-              borderRadius: "20px"
-            }}
-          >
-            <h3>Administración</h3>
-            <p style={{ color: "#aaa" }}>
-              Ver más
-            </p>
-          </div>
+{/* SERVICES */}
+{openSection === "services" && (
+<SectionCard title="STRUCTURED INVESTMENT STRATEGY">
+<p>
+A comprehensive approach to identifying, acquiring,
+managing and transforming real estate opportunities
+responsibly and sustainably.
+</p>
 
-          <div
-            style={{
-              background: "#2E3A2A",
-              border: "1px solid #D4AF37",
-              padding: "30px",
-              borderRadius: "20px"
-            }}
-          >
-            <h3>Cierre</h3>
-            <p style={{ color: "#aaa" }}>
-              Ver más
-            </p>
-          </div>
-        </div>
-      </section>
+<div style={serviceGrid}>
+<button
+style={serviceButton}
+onClick={() => toggleService("analysis")}
+> 
+Analysis
+</button>
 
-      {/* About */}
-      <section
-        id="about"
-        style={{
-          padding: "60px 20px",
-          textAlign: "center"
-        }}
-      >
-        <h2 style={{ fontSize: "32px" }}>
-          Sobre Nosotros
-        </h2>
+<button
+style={serviceButton}
+onClick={() => toggleService("acquisition")}
+> 
+Acquisition
+</button>
 
-        <p
-          style={{
-            maxWidth: "800px",
-            margin: "20px auto",
-            color: "#aaa",
-            lineHeight: "1.8"
-          }}
-        >
-          Rey Marques Investor LLC identifica oportunidades inmobiliarias
-          estratégicas mediante la adquisición y recuperación de propiedades.
-          Nuestro objetivo es restaurar activos, fortalecer comunidades y
-          promover el desarrollo sostenible a través de una administración
-          responsable y una visión de largo plazo.
-        </p>
+<button
+style={serviceButton}
+onClick={() => toggleService("management")}
+> 
+Management
+</button>
 
-        <p
-          style={{
-            maxWidth: "800px",
-            margin: "20px auto",
-            color: "#aaa",
-            lineHeight: "1.8"
-          }}
-        >
-          Operamos bajo principios de integridad, servicio y responsabilidad,
-          buscando generar valor económico y social para las comunidades donde
-          trabajamos.
-        </p>
-      </section>
+<button
+style={serviceButton}
+onClick={() => toggleService("closing")}
+> 
+Closing
+</button>
+</div>
 
-      {/* Contact */}
-      <section
-        id="contact"
-        style={{
-          padding: "60px 20px",
-          textAlign: "center"
-        }}
-      >
-        <h2 style={{ fontSize: "32px" }}>
-          Contact
-        </h2>
+{openService === "analysis" && (
+<ServiceCard>
+Market evaluation, property research, risk assessment and
+strategic opportunity identification.
+</ServiceCard>
+)}
 
-        <p style={{ color: "#aaa" }}>
-          ¿Interested in working with us?
-        </p>
+{openService === "acquisition" && (
+<ServiceCard>
+Strategic acquisition of real estate assets through
+disciplined evaluation and long-term value creation.
+</ServiceCard>
+)}
 
-        <a
-          href="mailto:info@reymarques.com"
-          style={{
-            color: "white",
-            textDecoration: "none",
-            fontSize: "20px"
-          }}
-        >
-          info@reymarques.com   
-        </a>
-        
-            <p
-                
-        <a
-  href="#"
-  style={{
-    color: "#D4AF37",
-    textDecoration: "none",
-    fontWeight: "bold"
-  }}
->
-  ESPAÑOL
-     
-</a> 
-    </p>
-      </section>
-    </div>
-  );
+{openService === "management" && (
+<ServiceCard>
+Property oversight, asset preservation, operational
+coordination and community-focused stewardship.
+</ServiceCard>
+)}
+
+{openService === "closing" && (
+<ServiceCard>
+Structured transaction completion, documentation review,
+compliance and successful execution.
+</ServiceCard>
+)}
+</SectionCard>
+)}
+
+{/* ABOUT */}
+{openSection === "about" && (
+<SectionCard title="ABOUT US">
+<p>
+Rey Marques Investor LLC identifies strategic real estate
+opportunities through acquisition, restoration and
+responsible stewardship.
+</p>
+
+<p>
+Our mission is to strengthen communities while creating
+sustainable value through integrity, service and long-term
+vision.
+</p>
+</SectionCard>
+)}
+
+{/* CONTACT */}
+{openSection === "contact" && (
+<SectionCard title="CONTACT">
+<p>Interested in working with us?</p>
+
+<a
+href="mailto:info@reymarques.com"
+style={{
+color: "#F5F5F0",
+fontSize: "20px",
+textDecoration: "none"
+}}
+> 
+info@reymarques.com
+</a>
+
+<br />
+<br />
+
+<a href="mailto:info@reymarques.com">
+<button style={contactButton}>
+Schedule a Consultation
+</button>
+</a>
+</SectionCard>
+)}
+
+{/* LANGUAGE */}
+<div
+style={{
+textAlign: "center",
+padding: "80px 20px 40px"
+}}
+> 
+<buttonstyle={menuButton}>
+Español
+</button>
+</div>
+</div>
+);
 }
+
+/* COMPONENTS */
+
+function SectionCard({ title, children }) {
+return (
+<div
+style={{
+maxWidth: "1000px",
+margin: "30px auto",
+padding: "40px",
+background: "#6E8B5E",
+borderRadius: "20px"
+}}
+> 
+<h2>{title}</h2>
+{children}
+</div>
+);
+}
+
+function ServiceCard({ children }) {
+return (
+<div
+style={{
+marginTop: "20px",
+padding: "20px",
+background: "#556B4D",
+borderRadius: "15px"
+}}
+> 
+{children}
+</div>
+);
+}
+
+/* STYLES */
+
+const menuButton = {
+background: "transparent",
+border: "none",
+color: "#F5F5F0",
+cursor: "pointer",
+fontSize: "15px",
+fontWeight: "bold"
+};
+
+const serviceGrid = {
+display: "grid",
+gridTemplateColumns: "repeat(auto-fit,minmax(200px,1fr))",
+gap: "15px",
+marginTop: "30px"
+};
+
+const serviceButton = {
+padding: "15px",
+borderRadius: "12px",
+border: "none",
+cursor: "pointer",
+background: "#556B4D",
+color: "#F5F5F0",
+fontWeight: "bold"
+};
+
+const contactButton = {
+padding: "15px 30px",
+borderRadius: "12px",
+border: "none",
+cursor: "pointer",
+background: "#F5F5F0",
+color: "#556B4D",
+fontWeight: "bold"
+};
