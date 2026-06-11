@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -87,17 +88,21 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div
-            style={{
-              fontSize: "90px",
-              lineHeight: "1",
-              marginBottom: "20px",
-            }}
-          >
-            👑
-            <br />
-            RM
-          </div>
+         <div
+  style={{
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: "30px",
+  }}
+>
+  <Image
+    src="/logo.png"
+    alt="Rey Marques Investor LLC"
+    width={420}
+    height={420}
+    priority
+  />
+</div> 
 
           <h1
             style={{
