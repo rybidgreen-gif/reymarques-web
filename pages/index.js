@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div
       style={{
-        background: "#556B4D",
+        background: "#3F513A",
         color: "#F5F5F0",
         minHeight: "100vh",
         fontFamily: "Georgia, serif",
@@ -98,8 +98,8 @@ export default function Home() {
   <Image
     src="/logo.png"
     alt="Rey Marques Investor LLC"
-    width={420}
-    height={420}
+    width={500}
+    height={500}
     priority
   />
 </div> 
