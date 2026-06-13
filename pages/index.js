@@ -94,18 +94,6 @@ export default function Home() {
               CONTACT
             </a>
 
-            <a
-              href="#contact"
-              style={{
-                border: "1px solid #D4AF37",
-                color: "#D4AF37",
-                padding: "10px 18px",
-                borderRadius: "4px",
-                textDecoration: "none",
-              }}
-            >
-              CONTACT US
-            </a>
           </div>
         </nav>
 
