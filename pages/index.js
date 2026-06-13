@@ -1,15 +1,3 @@
-Perfecto. Vamos a hacerlo por partes para que no se corte.
-
-PASO 1
-
-Abre:
-
-pages/index.js
-
-Selecciona todo el contenido y bórralo.
-
-Luego pega esta Parte 1 completa:
-
 import Image from "next/image";
 import Head from "next/head";
 
