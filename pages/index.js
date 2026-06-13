@@ -143,7 +143,7 @@ export default function Home() {
 
             <div
               style={{
-                width: "220px",
+                width: "320px",
                 height: "2px",
                 background: "#D4AF37",
                 margin: "25px 0",
