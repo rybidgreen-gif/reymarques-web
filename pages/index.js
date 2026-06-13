@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 export default function Home() {
   const [openSection, setOpenSection] = useState(null);
@@ -19,9 +20,9 @@ export default function Home() {
     <div
       style={{
         background: "#3F513A",
-        color: "#F5F5F0",
+        color: "#EFE8DA",
         minHeight: "100vh",
-        fontFamily: "Georgia, serif",
+        fontFamily: "'Merriweather', serif",
       }}
     >
       {/* NAVBAR */}
@@ -34,7 +35,7 @@ export default function Home() {
           borderBottom: "1px solid rgba(255,255,255,0.15)",
           position: "sticky",
           top: 0,
-          background: "#556B4D",
+          background: "#7A9270",
           zIndex: 1000,
         }}
       >
