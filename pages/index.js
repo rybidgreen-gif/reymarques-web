@@ -27,7 +27,7 @@ export default function Home() {
             justifyContent: "space-between",
             alignItems: "center",
             padding: "20px 40px",
-            background: "#44533F",
+            background: "linear-gradient(90deg,#2F3B2B 0%,#44533F 50%,#2F3B2B 100%)",
             position: "sticky",
             top: 0,
             zIndex: 100,
@@ -37,22 +37,23 @@ export default function Home() {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "12px",
+              gap: "20px",
             }}
           >
             <Image
               src="/logo.png"
               alt="Rey Marques"
-              width={55}
-              height={55}
+              width={95}
+              height={95}
             />
 
             <div>
               <div
                 style={{
-                  fontSize: "30px",
+                  fontSize: "38px",
                   letterSpacing: "2px",
                   color: "#D4AF37",
+                  fontWeight: "600",
                 }}
               >
                 REY MARQUES
@@ -60,8 +61,9 @@ export default function Home() {
 
               <div
                 style={{
-                  fontSize: "12px",
+                  fontSize: "14px",
                   letterSpacing: "4px",
+                  color: "#D4AF37",
                 }}
               >
                 INVESTOR LLC
