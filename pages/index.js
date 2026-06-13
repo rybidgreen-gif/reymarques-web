@@ -43,8 +43,8 @@ export default function Home() {
             <Image
               src="/logo.png"
               alt="Rey Marques"
-              width={95}
-              height={95}
+              width={105}
+              height={105}
             />
 
             <div>
@@ -123,8 +123,8 @@ export default function Home() {
             <Image
               src="/logo.png"
               alt="Logo"
-              width={260}
-              height={260}
+              width={420}
+              height={420}
               priority
             />
 
@@ -133,7 +133,7 @@ export default function Home() {
                 fontSize: "72px",
                 maxWidth: "1000px",
                 lineHeight: "1.1",
-                marginTop: "25px",
+                marginTop: "10px",
               }}
             >
               Building Value Through Integrity,
